@@ -1,0 +1,12 @@
+{
+  "name": "ColorPro — Colorimetría profesional",
+  "short_name": "ColorPro",
+  "description": "Asistente profesional de colorimetría capilar, diagnóstico y simulación.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#171717",
+  "lang": "es",
+  "orientation": "portrait-primary",
+  "icons": []
+}
