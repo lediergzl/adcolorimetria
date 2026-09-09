@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#171411">
+  <title>ColorPro — Colorimetría profesional</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">CP</span><div><strong>ColorPro</strong><small>Colorimetría profesional</small></div></div>
+    <nav id="nav">
+      <button class="nav-item active" data-view="dashboard">⌂ <span>Inicio</span></button>
+      <button class="nav-item" data-view="diagnosis">◉ <span>Analizar cabello</span></button>
+      <button class="nav-item" data-view="target">✦ <span>Color deseado</span></button>
+      <button class="nav-item" data-view="mixer">⊕ <span>Mezclador</span></button>
+      <button class="nav-item" data-view="simulator">◌ <span>Simulador</span></button>
+      <button class="nav-item" data-view="calculators">⌗ <span>Calculadoras</span></button>
+      <button class="nav-item" data-view="clients">♙ <span>Clientes</span></button>
+      <button class="nav-item" data-view="history">↺ <span>Historial</span></button>
+      <button class="nav-item" data-view="brands">▦ <span>Marcas</span></button>
+    </nav>
+    <div class="sidebar-foot"><button class="nav-item" data-view="settings">⚙ <span>Ajustes</span></button><small>v0.6 · offline-first</small></div>
+  </aside>
+  <main class="app"><header class="topbar"><div><span class="eyebrow">COLORPRO</span><h1 id="view-title">Inicio</h1></div><div class="top-actions"><span class="status"><i></i> Datos locales</span><button class="primary" id="new-client">+ Nuevo cliente</button></div></header><section id="content"></section></main>
+  <dialog id="client-dialog"><form method="dialog" id="client-form"><div class="dialog-head"><h2>Nuevo cliente</h2><button value="cancel" class="icon-btn">×</button></div><label>Nombre<input name="name" required placeholder="Nombre del cliente"></label><label>Notas<textarea name="notes" rows="3" placeholder="Observaciones generales"></textarea></label><div class="dialog-actions"><button value="cancel" class="secondary">Cancelar</button><button class="primary">Guardar cliente</button></div></form></dialog>
+  <div id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
