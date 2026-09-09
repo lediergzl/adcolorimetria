@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "0.7",
+  "levels": [
+    {"level":1,"name":"Negro","background":"rojo"},{"level":2,"name":"Castaño muy oscuro","background":"rojo"},
+    {"level":3,"name":"Castaño oscuro","background":"rojo"},{"level":4,"name":"Castaño medio","background":"rojo-naranja"},
+    {"level":5,"name":"Castaño claro","background":"naranja"},{"level":6,"name":"Rubio oscuro","background":"naranja"},
+    {"level":7,"name":"Rubio medio","background":"amarillo-naranja"},{"level":8,"name":"Rubio claro","background":"amarillo"},
+    {"level":9,"name":"Rubio muy claro","background":"amarillo-pálido"},{"level":10,"name":"Rubio extra claro","background":"amarillo-pálido"}
+  ],
+  "neutralization": {
+    "rojo":"verde", "rojo-naranja":"azul-verde", "naranja":"azul",
+    "amarillo-naranja":"azul-violeta", "amarillo":"violeta", "amarillo-pálido":"violeta"
+  },
+  "reflections": {
+    ".0":"natural", ".1":"ceniza", ".2":"violeta", ".3":"dorado", ".4":"cobrizo", ".5":"caoba", ".6":"rojo", ".7":"mate"
+  }
+}
