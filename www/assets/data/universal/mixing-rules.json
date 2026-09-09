@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.2",
+  "scope": "universal",
+  "description": "Estructura de reglas de mezcla. No contiene proporciones comerciales no verificadas.",
+  "rules": [
+    {"id":"ratio-required","type":"developer-ratio","status":"manufacturer-data-required","message":"La proporción color/oxidante debe proceder del fabricante del producto seleccionado."},
+    {"id":"lift-caution","type":"viability","condition":"artificial-pigment-and-lift","action":"warn","message":"El color cosmético no se asume como aclaración fiable de pigmento artificial."},
+    {"id":"high-porosity","type":"viability","condition":"high-porosity","action":"warn","message":"La porosidad alta puede alterar absorción, intensidad y duración del reflejo."}
+  ],
+  "productSchema": {"brandId":"string","line":"string","shade":"string","category":"color|developer|corrector|bleach|other","developerRatio":null,"source":"verified|user-entered|unknown"}
+}
